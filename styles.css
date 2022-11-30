@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+:root {
+    --width: 300px;
+    --height: 300px;
+    --gap: 1em;
+}
+
+* {
+    box-sizing: border-box;
+    color: black;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.profile img {
+    border-radius: 16px;
+    max-width: 170px;
+}
+
+
+.name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #4E5150;
+    margin-bottom: 0;
+}
+
+.location {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+}
+
+.profile-cards {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.2em;
+}
+
+.profile-card {
+    background: #E5E5E5;
+    border-radius: 12px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+footer {
+    bottom: 20px;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+
+}
+
+.card-info-1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #4E5150;
+    margin-bottom: 0;
+
+}
+
+.card-info-2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+    margin-top: 0;
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.grid-item {
+    height: var(--height);
+    width: var(--width);
+
+    text-align: center;
+}
+
+.gallery img {
+    width: inherit;
+    height: inherit;
+    border-radius: 12px;
+    vertical-align: middle;
+}
+
+
+.wide {
+    width: calc(var(--width) + var(--width) + var(--gap));
+    grid-column: 2 span;
+
+}
+
+.tall {
+    height: calc(var(--height) + var(--height) + var(--gap));
+    grid-row: 2 span;
+
+}
+
+@media screen and (max-width: 1248px) {
+    :root {
+        --width: 200px;
+        --height: 200px;
+        --gap: .8em;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    :root {
+        --width: 150px;
+        --height: 150px;
+        --gap: .7em;
+    }
+
+    .gallery {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+
+    .profile-card {
+        width: 75px;
+    }
+
+    .card-info-1 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .card-info-2 {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .location {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .name {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .profile img {
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --width: 85px;
+        --height: 85px;
+        --gap: 1em;
+    }
+
+    body {
+        margin-top: 20px;
+    }
+
+
+}
