@@ -37,7 +37,7 @@
 
 
 ![image](./images/desktop.png)
-![image](./images/mobile.PNG)
+![image](./images/mobile.png)
 
 
 ### Built With
